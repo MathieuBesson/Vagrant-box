@@ -1,3 +1,15 @@
-Source files for my article about setting up a LAMP environment in Vagrant:
+Céation d'une box Vagrant personnalisé 
 
-https://www.ewaldvanderveken.dev/setting-up-a-lamp-development-environment-in-vagrant/ 
+Box basé sur la box officiel de Ubuntu 20.04
+Inclus : 
+    - Npm 
+    - Apache 
+    - PHP 7.4
+    - Mysql 5.7
+    - Postgresql
+    - Phpmyadmin
+    - Yarn
+
+La création de cette box est basé sur cette article : 
+
+[https://www.ewaldvanderveken.dev/setting-up-a-lamp-development-environment-in-vagrant/](https://www.ewaldvanderveken.dev/setting-up-a-lamp-development-environment-in-vagrant/)
