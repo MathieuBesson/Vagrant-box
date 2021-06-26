@@ -1,1 +1,6 @@
 /.vagrant/
+
+
+# exclude everything in /donnee folder except directory donnee/helloworld
+/donnee/*
+!/donnee/helloworld
