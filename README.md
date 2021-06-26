@@ -1,14 +1,14 @@
-Céation d'une box Vagrant personnalisé 
+# Création d'une box Vagrant personnalisé 
 
-Box basé sur la box officiel de Ubuntu 20.04
+## Box basé sur la box officiel de Ubuntu 20.04
 Inclus : 
-    - Npm 
-    - Apache 
-    - PHP 7.4
-    - Mysql 5.7
-    - Postgresql
-    - Phpmyadmin
-    - Yarn
+- Npm
+- Apache
+- PHP 7.4
+- Mysql 5.7
+- Postgresql
+- Phpmyadmin
+- Yarn
 
 La création de cette box est basé sur cette article : 
 
