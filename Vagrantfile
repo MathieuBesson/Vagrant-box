@@ -7,15 +7,16 @@ Vagrant.configure("2") do |config|
 
     config.vm.synced_folder "./donnee", "/var/www"
 
+    config.vm.provision :shell, path: "donnee/provision/components/apt.sh"
+    config.vm.provision :shell, path: "donnee/provision/components/apache.sh"
+    config.vm.provision :shell, path: "donnee/provision/components/php.sh"
+    config.vm.provision :shell, path: "donnee/provision/components/postgres.sh"
+    config.vm.provision :shell, path: "donnee/provision/components/npm.sh"
 
-    config.vm.provision :shell, path: "provision/components/apache.sh"
-    config.vm.provision :shell, path: "provision/components/php.sh"
-    config.vm.provision :shell, path: "provision/components/postgres.sh"
-    config.vm.provision :shell, path: "provision/components/npm.sh"
-
-    # config.vm.provision :shell, path: "provision/components/mysql.sh"
-    # config.vm.provision :shell, path: "provision/components/phpmyadmin.sh"
-    # config.vm.provision :shell, path: "provision/components/yarn.sh"
+    # config.vm.provision :shell, path: "donnee/provision/components/mysql.sh"
+    # config.vm.provision :shell, path: "donnee/provision/components/phpmyadmin.sh"
+    # config.vm.provision :shell, path: "donnee/provision/components/yarn.sh"
 
     config.vm.provision :shell, inline: "echo 'cd /var/www' >> /home/vagrant/.profile"
+
 end
