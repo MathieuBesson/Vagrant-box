@@ -10,6 +10,13 @@ Inclus :
 - Phpmyadmin
 - Yarn
 
+## Installation 
+
+```shell 
+ cd Vagrant/
+ vagrant up
+```
+
 La création de cette box est basé sur cette article : 
 
 [https://www.ewaldvanderveken.dev/setting-up-a-lamp-development-environment-in-vagrant/](https://www.ewaldvanderveken.dev/setting-up-a-lamp-development-environment-in-vagrant/)

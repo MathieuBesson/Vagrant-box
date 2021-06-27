@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
         v.name = "ubuntu2004"
     end
 
-    config.vm.synced_folder "./donnee", "/var/www"
+    config.vm.synced_folder "./donnee/www", "/var/www"
 
     config.vm.provision :shell, path: "donnee/provision/components/apt.sh"
     config.vm.provision :shell, path: "donnee/provision/components/apache.sh"

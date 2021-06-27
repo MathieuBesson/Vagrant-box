@@ -2,5 +2,5 @@
 
 
 # exclude everything in /donnee folder except directory donnee/helloworld
-/donnee/*
-!/donnee/helloworld
+/donnee/www/*
+!/donnee/www/helloworld
