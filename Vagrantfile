@@ -2,10 +2,12 @@ Vagrant.configure("2") do |config|
     config.vm.box = "generic/ubuntu2004"
 
     config.vm.provider "virtualbox" do |v|
-        v.name = "ubuntu2004"
+        v.name = "ubuntu2004-2"
     end
 
-    config.vm.synced_folder "./donnee/www", "/var/www"
+    config.vm.synced_folder "./donnee/", "/var/www"
+
+    config.vm.network "private_network", ip: "192.168.88.188"
 
     config.vm.provision :shell, path: "donnee/provision/components/apt.sh"
     config.vm.provision :shell, path: "donnee/provision/components/apache.sh"
