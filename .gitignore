@@ -2,5 +2,5 @@
 /.idea/
 
 # exclude everything in /donnee folder except directory donnee/helloworld
-/donnee/www/*
-!/donnee/www/helloworld
+/donnee/sites/*
+!/donnee/sites/helloworld

@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
         v.name = "ubuntu2004-2"
     end
 
-    config.vm.synced_folder "./donnee/", "/var/www", owner: "www-data", group: "www-data", id: 'source'
+    config.vm.synced_folder "./donnee/", "/var/www", owner: 'www-data', group: 'www-data', id: 'source', mount_options: ['dmode=777', 'fmode=777']
 
     config.vm.network "private_network", ip: "192.168.88.188"
 
