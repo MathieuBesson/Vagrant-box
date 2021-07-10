@@ -1,5 +1,5 @@
 /.vagrant/
-
+/.idea/
 
 # exclude everything in /donnee folder except directory donnee/helloworld
 /donnee/www/*

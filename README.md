@@ -4,8 +4,8 @@
 Inclus : 
 - Npm
 - Apache
-- PHP 7.4
-- Mysql 5.7
+- PHP
+- Mysql
 - Postgresql
 - Phpmyadmin
 - Yarn
